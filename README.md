@@ -10,7 +10,7 @@ Experience the FrostMine – SIH Simulation live:
 
 🔗 Project Repository
 
-👉 "GitHub Repository" (https://github.com/Adityaa2006/FogSafe-SIH-Simulation-SIH)
+👉 "GitHub Repository" (https://github.com/Adityaa2006/FrostMine-SIH-Simulation-SIH)
 ## Run
 ```powershell
 cd frostmine
