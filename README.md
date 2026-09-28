@@ -4,7 +4,7 @@
 
 Experience the FrostMine – SIH Simulation live:
 
-👉 "Open Live Demo" ((https://frostmine-sih-simulation-sih.onrender.com/))
+👉 "Open Live Demo" ((https://fogsafe-sih-simulation-sih.onrender.com/)))
 
 «The application is deployed on Render. The free hosting service may put the application to sleep after a period of inactivity, so the first request may take a short time to load.»
 
