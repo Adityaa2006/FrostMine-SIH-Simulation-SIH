@@ -1,4 +1,4 @@
-/* FogSafe Control Room dashboard logic */
+/* FrostMine Control Room dashboard logic */
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 

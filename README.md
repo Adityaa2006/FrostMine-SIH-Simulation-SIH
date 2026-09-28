@@ -1,11 +1,10 @@
-
-# FogSafe SIH Simulation v8 – Smart Emergency Workflow
+# FrostMine SIH Simulation v8 – Smart Emergency Workflow
 
 🚀 Live Demo
 
-Experience the FogSafe – SIH Simulation live:
+Experience the FrostMine – SIH Simulation live:
 
-👉 "Open Live Demo" ((https://fogsafe-sih-simulation-sih.onrender.com/))
+👉 "Open Live Demo" ((https://frostmine-sih-simulation-sih.onrender.com/))
 
 «The application is deployed on Render. The free hosting service may put the application to sleep after a period of inactivity, so the first request may take a short time to load.»
 
@@ -14,7 +13,7 @@ Experience the FogSafe – SIH Simulation live:
 👉 "GitHub Repository" (https://github.com/Adityaa2006/FogSafe-SIH-Simulation-SIH)
 ## Run
 ```powershell
-cd fogsafe
+cd frostmine
 python -m pip install flask --break-system-packages   # if Flask isn't installed
 python app.py
 ```
@@ -54,7 +53,7 @@ mapped to an environment band automatically:
 ## Emergency workflow
 - Driver emergency opens a 3-second safety window.
 - Driver can submit a manual emergency with a reason.
-- If the driver cannot complete the manual request within 3 seconds, FogSafe automatically sends a **Driver Auto-Fallback Emergency** to the Control Room.
+- If the driver cannot complete the manual request within 3 seconds, FrostMine automatically sends a **Driver Auto-Fallback Emergency** to the Control Room.
 - Control Room receives the request and can use **ALL OK — CLEAR ALL** to clear every active AI/control/driver emergency.
 - ALL OK restores affected connected vehicles to normal travel and sends the driver a localized ALL OK message.
 - AI-detected emergencies remain separate from driver-originated emergencies.

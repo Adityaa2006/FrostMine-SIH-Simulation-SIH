@@ -1,4 +1,4 @@
-/* FogSafe Driver dashboard logic */
+/* FrostMine Driver dashboard logic */
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 
@@ -8,9 +8,9 @@ async function post(url, body = {}) {
   return r.json();
 }
 
-let lang = localStorage.getItem('fogsafe-driver-language') || 'en';
+let lang = localStorage.getItem('frostmine-driver-language') || 'en';
 let voiceOn = true;
-let currentVehicle = localStorage.getItem('fogsafe-driver-vehicle') || null;
+let currentVehicle = localStorage.getItem('frostmine-driver-vehicle') || null;
 let currentState = null;
 let shownMessageIds = new Set();
 let emergencyTimer = null;
@@ -122,7 +122,7 @@ function populateVehicleSelect(d) {
   if (!currentVehicle || !ids.includes(currentVehicle)) currentVehicle = ids[0];
   sel.innerHTML = ids.map(id => `<option value="${id}">${id} — ${esc(d.vehicles[id].driver.name)}</option>`).join('');
   sel.value = currentVehicle;
-  sel.onchange = () => { currentVehicle = sel.value; localStorage.setItem('fogsafe-driver-vehicle', currentVehicle); render(); };
+  sel.onchange = () => { currentVehicle = sel.value; localStorage.setItem('frostmine-driver-vehicle', currentVehicle); render(); };
 }
 
 function render() {
